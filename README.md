@@ -4,9 +4,12 @@
 
 Using programming tools such as iterative loops and if/then statements, it’s possible to use computers as tools for sorting through and assisting with the analysis of large data sets.  The client for this project, a recent graduate of a financial program, has asked for a multi-year analysis of the performance of green energy stocks to guide management of their parent’s investment portfolio.  Wherein initial analysis identified some intriguing trends and investment opportunities, the programming tools employed for data sorting/management were reflective of the limited amount of data being analysed and resulted in a process which would not be ideal for larger data sets.  As such, further analysis was conducted to determine if refactoring of the code could be employed to produce a process which harvested the same data for analysis but which would be better suited for use with larger data sets. 
 
-##Results
+## Results
 
 Analysis of the performance of green energy stocks from both 2017 and 2018 using both the original and refactored code is summarised in Figure 1 and Figure 2.
+
+![x](https://github.com/Scruffy-Bearie/stock-analysis/blob/main/VBA_Challenge_2017.png)
+![x](https://github.com/Scruffy-Bearie/stock-analysis/blob/main/VBA_Challenge_2018.png)
 
 ### (i) Green Energy Stocks 2017 vs. 2018
 Comparison of Figure 1 and Figure 2 reveals that overall performance of green energy stocks change dramatically from 2017 to 2018.  Wherein all of the green energy stocks analysed, with the exception of TERP, delivered a positive return in 2017, in 2018, perhaps owing to a change in the political climate in the U.S., performance of green energy stocks, in general, was poor with only ENPH and RUN delivering positive returns.  
@@ -14,7 +17,13 @@ Comparison of Figure 1 and Figure 2 reveals that overall performance of green en
 ### (ii) Original Code vs. Refactored
 The original coding for analysis (see Figure 3: Original Code for Data Extraction) employed an array to identify each stock ticker and was constructed in such a way that the computer had to loop through the data for all stock tickers in order to extract the data required for analysis of each individual stock.  
 
-The refactored code (see Figure 4: Refactored Code for Data Extraction) involved establishing additional arrays for data output and a “nested for loop” meaning that the computer had to loop through the entire data set only once to extract the data for each individual ticker.  Comparison of Figure 1 and Figure 2 reveals that although the original and refactored code extracted the same information from the data set, the refactored code allowed the computer to perform the task approximately 10x faster.
+![x](https://github.com/Scruffy-Bearie/stock-analysis/blob/main/VBA_Challenge_Originalcode.png)
+
+The refactored code (see Figure 4: Refactored Code for Data Extraction) involved establishing additional arrays for data output and a “nested for loop” meaning that the computer had to loop through the entire data set only once to extract the data for each individual ticker.  
+
+![x](https://github.com/Scruffy-Bearie/stock-analysis/blob/main/VBA_Challenge_Refactoredcode.png)
+
+Comparison of Figure 1 and Figure 2 reveals that although the original and refactored code extracted the same information from the data set, the refactored code allowed the computer to perform the task approximately 10x faster.
 
 ## Analysis
 
